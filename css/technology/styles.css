@@ -1,0 +1,121 @@
+body {
+  background: url("../../assets/technology/background-technology-mobile.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.launch {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 4rem;
+}
+
+.launch__img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.launch__content {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.launch__btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.launch__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(186, 184, 184, 0.459);
+  border-radius: 50%;
+  color: white;
+  font-family: var(--belleir);
+  transition: 0.5s;
+}
+
+.launch__btn:hover {
+  border: 1px solid white;
+}
+
+.launch__btn--active {
+  background-color: white;
+  color: black;
+}
+
+.launch__title {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.article-title.container {
+  width: 80%;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .launch__btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .launch__img {
+    display: block;
+    width: 100%;
+    max-width: unset;
+    margin: unset;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1100px) {
+  .launch {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    gap: 1rem;
+    grid-template-rows: 1fr;
+  }
+  .launch__img {
+    width: 100%;
+    margin: unset;
+    margin-left: auto;
+    grid-column: 2/-1;
+    max-width: 550px;
+  }
+
+  .launch__content {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+    text-align: start;
+  }
+
+  .launch__title {
+    font-size: 2.8rem;
+  }
+
+  .launch__paragraph {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+  .launch__btns {
+    flex-direction: column;
+  }
+
+  .launch__btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}

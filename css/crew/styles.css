@@ -1,0 +1,132 @@
+@import url("../../css/general.css");
+body {
+  background: url("../../assets/crew/background-crew-mobile.jpg") no-repeat;
+  background-size: cover;
+}
+
+.main {
+  max-width: 1100px;
+}
+
+.crew {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 0.5fr 1fr;
+}
+
+.crew__content {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.crew__name {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.crew__paragraph {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.crew__btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.crew__btn {
+  border-radius: 50%;
+  padding: 0.4rem;
+  background-color: rgba(162, 161, 161, 0.467);
+}
+
+.crew__btn--active {
+  background-color: var(--white);
+}
+
+.crew__btn:hover {
+  background-color: rgba(162, 161, 161, 0.558);
+}
+
+.crew__picture {
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto;
+  max-height: 560px;
+}
+.crew__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Para otros navegadores */
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("../../assets/crew/background-crew-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .crew__name {
+    font-size: 2.5rem;
+  }
+
+  .crew__picture {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    background: url("../../assets/crew/background-crew-desktop.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .crew {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: unset;
+    min-height: 560px;
+  }
+
+  .crew__name {
+    font-size: 3rem;
+  }
+  .crew__content {
+    text-align: start;
+    max-width: unset;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crew__texts {
+    margin-top: auto;
+  }
+
+  .crew__paragraph {
+    font-size: 1.1rem;
+  }
+
+  .crew__btns {
+    margin-top: auto;
+    margin-right: auto;
+    gap: 2rem;
+  }
+
+  .crew__picture {
+    max-width: unset;
+    width: 75%;
+    margin: 0 0 0 auto;
+  }
+}

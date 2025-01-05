@@ -1,0 +1,153 @@
+@import url("../general.css");
+body {
+  background: url("../../assets/destination/background-destination-mobile.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.planet {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.planet__content {
+  text-align: center;
+}
+
+.planet__img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.planet__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.planet__link {
+  color: var(--blue-300);
+  font-family: var(--barlow-condensed);
+  padding-bottom: 0.7rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transition: 0.5s;
+  border-bottom: 3px solid transparent;
+}
+
+.planet__link:hover {
+  border-bottom: 3px solid var(--gray-hover);
+}
+
+.planet__link--active {
+  cursor: default;
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+}
+
+.planet__link--active:hover {
+  border-bottom: 3px solid var(--white);
+}
+
+.planet__title {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.planet__paragraph {
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.hr {
+  margin: 1.5rem 0;
+  color: rgba(128, 128, 128, 0.529);
+}
+
+.planet__details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.planet__detail span:nth-child(1) {
+  display: block;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: var(--blue-300);
+  font-family: var(--barlow-condensed);
+  margin-bottom: 1rem;
+}
+
+.planet__detail {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: var(--bellefair);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("../../assets/destination/background-destination-tablet.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .planet {
+    width: 70%;
+  }
+
+  .planet__img {
+    width: 60%;
+  }
+  .planet__title {
+    font-size: 5rem;
+  }
+
+  .planet__details {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .planet__detail span:nth-child(1) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .planet {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+  }
+
+  .planet__content {
+    text-align: start;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .planet__img {
+    width: 80%;
+  }
+
+  .planet__links {
+    justify-content: start;
+  }
+  .planet__link {
+    font-size: 1.1rem;
+  }
+
+  .planet__title {
+    font-size: 6rem;
+  }
+
+  .planet__details {
+    justify-content: start;
+    gap: 6rem;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/destination/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      defer
+    ></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/destination/index.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo"
+        ><img src="assets/shared/logo.svg" alt="Logo"
+      /></a>
+      <div class="nav__menu">
+        <button class="nav__icon nav__icon--hamburger" id="btn-links--open">
+          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        </button>
+        <!-- <button class="nav__icon nav__icon--close">
+          <img src="assets/shared/icon-close.svg" alt="" />
+        </button> -->
+
+        <div class="nav__links__container">
+          <div class="nav__links">
+            <button class="nav__icon nav__icon--close" id="btn-links--close">
+              <img src="assets/shared/icon-close.svg" alt="" />
+            </button>
+            <a href="index.html" class="nav__link"><span>00</span> Home</a>
+            <a href="destination.html" class="nav__link nav__link--active"
+              ><span>01</span> Destination</a
+            >
+            <a href="crew.html" class="nav__link"><span>02</span> Crew</a>
+            <a href="technology.html" class="nav__link"
+              ><span>03</span> Technology</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main container">
+      <h2 class="article-title"><span>01</span> Pick your destination</h2>
+
+      <article class="planet" id="planet">
+        <!-- <img
+            src="assets/destination/image-moon.png"
+            alt="MOON"
+            class="planet__img transition"
+            data-aos="fade-right"
+            id="img"
+          />
+
+          <div class="planet__content">
+            <div class="planet__links transition fade-down">
+              <button
+                class="planet__link planet__link--active"
+                data-planet="moon"
+              >
+                MOON
+              </button>
+              <button class="planet__link" data-planet="mars">MARS</button>
+              <button class="planet__link" data-planet="europa">EUROPA</button>
+              <button class="planet__link" data-planet="titan">TITAN</button>
+            </div>
+            <h1 class="planet__title transition" id="name" data-aos="fade-left">
+              MOON
+            </h1>
+            <p
+              class="planet__paragraph transition"
+              id="paragraph"
+              data-aos="zoom"
+            >
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <hr class="hr" />
+            <div class="planet__details transition" data-aos="fade-up">
+              <p class="planet__detail">
+                <span>AVG. DISTANCE</span> <span id="distance">384,400 KM</span>
+              </p>
+              <p class="planet__detail">
+                <span>EST. TRAVEL TIME</span> <span id="travel">3 DAYS</span>
+              </p>
+            </div>
+          </div> -->
+      </article>
+    </main>
+
+    <!--  Moon Mars Europa Titan Europa The smallest of the
+    four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With
+    an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or
+    simple relaxation in your snug wintery cabin. Avg. distance 628 mil. km Est.
+    travel time 3 years -->
+  </body>
+</html>
